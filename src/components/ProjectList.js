@@ -10,8 +10,11 @@ export default class ProjectList extends React.Component {
     return (
       <ul className="proj-list">
         {projects.map((project) => (
-          <li className="proj">
-            <a href={project[1]}>{project[0]}</a>
+          <li className="proj center">
+            <a href={project[1]}>
+              {project[0]}
+              <img src="../svg/globe.svg" />
+            </a>
           </li>
         ))}
       </ul>

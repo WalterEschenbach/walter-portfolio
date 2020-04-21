@@ -19,7 +19,11 @@ export default class ProjectList extends React.Component {
           <li className="proj center" key={project}>
             <a href={project[1]}>
               {project[0]}
-              <img src="../svg/globe.svg" alt={project} />
+              <img
+                className="thumbnail column"
+                src="../svg/globe.svg"
+                alt={project}
+              />
             </a>
           </li>
         ))}

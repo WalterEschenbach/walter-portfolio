@@ -19,7 +19,7 @@ html {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 .border {
-  border: solid 1px blue;
+  border: solid 1px black;
 }
 .center {
   justify-content: center;
@@ -29,6 +29,7 @@ html {
   display: flex;
   justify-content: flex-end;
 }
+
 .end {
   align-self: flex-end;
 }
@@ -63,6 +64,7 @@ nav {
   width: 80%;
   transform: translateX(95%);
   background: rgba(0, 0, 0, 0.19);
+  box-shadow: inset 0 0 4px #000000;
 }
 .slide {
   animation: slide 0.4s ease-in forwards;
@@ -86,6 +88,10 @@ h1 {
   font-weight: 100;
   font-size: 2em;
   margin: auto;
+}
+h2 {
+  font-weight: 100;
+  font-size: 1.5rem;
 }
 h3 {
   font-weight: 100;
@@ -135,7 +141,8 @@ nav ul li a.active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: solid 1px blue;
+  border: solid 1px black;
+  box-shadow: inset 0 0 4px #000000;
 }
 .proj-list li {
   display: flex;
@@ -161,4 +168,14 @@ nav ul li a.active {
 }
 .middle {
   margin: auto;
+}
+.my-name {
+  margin-top: 5rem;
+}
+.hb {
+  background-image: url("./img/Ellipse\ 2.svg");
+  background-repeat: no-repeat;
+}
+.hInfo {
+  width: 90%;
 }

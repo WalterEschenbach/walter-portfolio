@@ -6,8 +6,8 @@ export default function Nav() {
   const links = ["Home", "Portfolio", "Resume", "Contact"];
   return (
     <Router>
-      <nav className="border right">
-        <ul className="space-between row border">
+      <nav className="right">
+        <ul className="space-between row">
           {links.map((link) => (
             <li key={link} className="listStyle">
               <NavLink

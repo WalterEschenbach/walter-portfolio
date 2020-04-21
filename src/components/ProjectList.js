@@ -1,8 +1,18 @@
 import React from "react";
+import { WiDayCloudy } from "react-icons/wi";
+import { FaYoutube } from "react-icons/fa";
 
 const projects = [
-  ["weather-app", "https://esch-weather-app.herokuapp.com"],
-  ["video-app", "https://chicagojoe1991.github.io/video-app"],
+  [
+    <WiDayCloudy size="7rem" />,
+    "https://esch-weather-app.herokuapp.com",
+    "Weather App",
+  ],
+  [
+    <FaYoutube size="7rem" />,
+    "https://chicagojoe1991.github.io/video-app",
+    "Video App",
+  ],
   ["3", "url3"],
   ["4", "url4"],
   ["5", "url5"],
@@ -17,13 +27,13 @@ export default class ProjectList extends React.Component {
       <ul className="proj-list">
         {projects.map((project) => (
           <li className="proj center" key={project}>
-            <a href={project[1]}>
+            <a
+              className="center middle"
+              style={{ height: "100%", width: "100%" }}
+              href={project[1]}
+            >
               {project[0]}
-              <img
-                className="thumbnail column"
-                src="../svg/globe.svg"
-                alt={project}
-              />
+              <h2>{project[2]}</h2>
             </a>
           </li>
         ))}

@@ -92,6 +92,7 @@ h1 {
 h2 {
   font-weight: 100;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 h3 {
   font-weight: 100;
@@ -178,4 +179,7 @@ nav ul li a.active {
 }
 .hInfo {
   width: 90%;
+}
+a {
+  text-decoration: none;
 }

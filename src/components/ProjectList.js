@@ -4,16 +4,6 @@ import { FaYoutube, FaGithubSquare, FaNewspaper } from "react-icons/fa";
 
 const projects = [
   [
-    <WiDayCloudy size="7rem" />,
-    "https://esch-weather-app.herokuapp.com",
-    "Weather App",
-  ],
-  [
-    <FaYoutube size="7rem" />,
-    "https://chicagojoe1991.github.io/video-app",
-    "Video App",
-  ],
-  [
     <FaGithubSquare size="7rem" />,
     "https://romantic-edison-5bc7d1.netlify.app",
     "Github Battle",
@@ -23,6 +13,17 @@ const projects = [
     "https://hungry-hawking-93223b.netlify.app",
     "Hacker News",
   ],
+  [
+    <WiDayCloudy size="7rem" />,
+    "https://esch-weather-app.herokuapp.com",
+    "Weather App",
+  ],
+  [
+    <FaYoutube size="7rem" />,
+    "https://chicagojoe1991.github.io/video-app",
+    "Video App",
+  ],
+
   ["5", "url5"],
   ["6", "url6"],
   ["7", "url7"],

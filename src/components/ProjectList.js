@@ -1,6 +1,6 @@
 import React from "react";
 import { WiDayCloudy } from "react-icons/wi";
-import { FaYoutube } from "react-icons/fa";
+import { FaYoutube, FaGithubSquare, FaNewspaper } from "react-icons/fa";
 
 const projects = [
   [
@@ -13,8 +13,16 @@ const projects = [
     "https://chicagojoe1991.github.io/video-app",
     "Video App",
   ],
-  ["3", "url3"],
-  ["4", "url4"],
+  [
+    <FaGithubSquare size="7rem" />,
+    "https://romantic-edison-5bc7d1.netlify.app",
+    "Github Battle",
+  ],
+  [
+    <FaNewspaper size="7rem" />,
+    "https://hungry-hawking-93223b.netlify.app",
+    "Hacker News",
+  ],
   ["5", "url5"],
   ["6", "url6"],
   ["7", "url7"],

@@ -1,8 +1,13 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 * {
   margin: 0;
@@ -21,8 +26,11 @@ html {
   align-items: center;
 }
 .right {
-  position: absolute;
-  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+.end {
+  align-self: flex-end;
 }
 .space-between {
   justify-content: space-between;
@@ -30,6 +38,10 @@ html {
 .row {
   display: flex;
   flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
 }
 .listStyle {
   list-style: none;
@@ -44,62 +56,30 @@ nav {
 .nine-two {
   height: 92vh;
 }
-
-/* colors 
-5A2C33 - red
-5F412E - beige
-1E3D36 - blue
-335128 - green
-*/
-
-/* header */
-
-header {
-  background: linear-gradient(to right, #1e3d36, #335128);
-  height: 80vh;
-  width: 100%;
-  z-index: -1;
-  margin: auto;
-  position: relative;
-  display: flex;
+.toolkit {
+  border-radius: 15px 0px 0px 15px;
+  margin-top: 1rem;
+  height: 75vh;
+  width: 80%;
+  transform: translateX(95%);
+  background: rgba(0, 0, 0, 0.19);
 }
-header div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  color: white;
-  pointer-events: none;
-  border: 2px solid red;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+.slide {
+  animation: slide 0.4s ease-in forwards;
 }
+@keyframes slide {
+  0% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(0%);
+    cursor: pointer;
+  }
+}
+
 #canvas1 {
   height: 100%;
   width: 100%;
-}
-
-#fullName {
-  width: 100%;
-  margin-top: 4rem;
-  text-align: center;
-  border: 1px solid blue;
-  height: fit-content;
-}
-#job {
-  width: 100%;
-  margin-top: 8rem;
-  text-align: center;
-  border: 1px solid blue;
-  height: fit-content;
-}
-#projButton {
-  width: 100%;
-  margin-top: 9rem;
-  text-align: center;
-  border: 1px solid yellow;
 }
 
 h1 {
@@ -115,19 +95,6 @@ h4 {
   font-weight: 100;
   margin: auto;
 }
-/* navigation bar for desktop */
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 7vh;
-  background-color: transparent;
-  padding-left: 75px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-}
 
 .logo {
   color: white;
@@ -137,12 +104,7 @@ h4 {
   font-weight: bold;
   letter-spacing: 5px;
 }
-.nav-list {
-  display: flex;
-  width: 30%;
-  justify-content: space-around;
-  margin-left: 40vw;
-}
+
 nav ul li {
   list-style: none;
   display: flex;
@@ -186,46 +148,17 @@ nav ul li a.active {
   margin: 1em 1em;
   z-index: 1;
 }
-
-.level3 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 5rem;
-}
-.toolkit {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 50%;
-  border: 2px solid blue;
-  height: stretch;
-}
-.resume {
-  display: flex;
-  width: 50%;
-  border: 2px solid blue;
-  height: 700px;
-  background: linear-gradient(to right, #1e3d36, #335128);
-}
-#toolkit-title {
-  width: 100%;
-  height: 3rem;
-  text-align: center;
-}
-.toolkit ul {
+.wrap {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
 }
-.toolkit ul li {
-  list-style: none;
+.thumbnail {
+  height: 6rem;
+  width: 6rem;
+}
+.margin-small {
+  margin: 10px;
+}
+.middle {
   margin: auto;
-}
-
-.toolkit ul li img {
-  color: blue;
-  height: 10rem;
-  width: 10rem;
-  padding: 50px;
 }

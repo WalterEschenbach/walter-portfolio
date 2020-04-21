@@ -5,9 +5,9 @@ import { BrowserRouter as Router, NavLink } from "react-router-dom";
 export default function Nav() {
   const links = ["Home", "Portfolio", "Resume", "Contact"];
   return (
-    <nav className="fifty">
-      <Router>
-        <ul className="space-between row right">
+    <Router>
+      <nav className="border right">
+        <ul className="space-between row border">
           {links.map((link) => (
             <li key={link} className="listStyle">
               <NavLink
@@ -19,7 +19,7 @@ export default function Nav() {
             </li>
           ))}
         </ul>
-      </Router>
-    </nav>
+      </nav>
+    </Router>
   );
 }

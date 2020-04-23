@@ -23,11 +23,6 @@ const projects = [
     "https://chicagojoe1991.github.io/video-app",
     "Video App",
   ],
-
-  ["5", "url5"],
-  ["6", "url6"],
-  ["7", "url7"],
-  ["8", "url8"],
 ];
 
 export default class ProjectList extends React.Component {
@@ -37,7 +32,7 @@ export default class ProjectList extends React.Component {
         {projects.map((project) => (
           <li className="proj center" key={project}>
             <a
-              className="center middle"
+              className="center middle top"
               style={{ height: "100%", width: "100%" }}
               href={project[1]}
             >

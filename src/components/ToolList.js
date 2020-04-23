@@ -1,13 +1,13 @@
 import React from "react";
 
 const tools = [
-  "css3.svg",
   "git.svg",
   "github-tile.svg",
   "html5.svg",
   "javascript-vertical.svg",
-  "jquery-vertical.svg",
+  "css3.svg",
   "react-icon.svg",
+  "jquery-vertical.svg",
 ];
 
 export default function ToolList() {

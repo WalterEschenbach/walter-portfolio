@@ -28,20 +28,23 @@ const projects = [
 export default class ProjectList extends React.Component {
   render() {
     return (
-      <ul className="proj-list">
-        {projects.map((project) => (
-          <li className="proj center" key={project}>
-            <a
-              className="center middle top"
-              style={{ height: "100%", width: "100%" }}
-              href={project[1]}
-            >
-              {project[0]}
-              <h2>{project[2]}</h2>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <React.Fragment>
+        <ul className="proj-list">
+          {projects.map((project) => (
+            <li className="proj center m-top animated fadeInUp" key={project}>
+              <a
+                className="center column middle"
+                style={{ height: "100%", width: "100%" }}
+                href={project[1]}
+              >
+                <div className="">{project[0]}</div>
+                <h2 className="">{project[2]}</h2>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <a href="./files/Walter Eschenbach Resume - 05.09.20.pdf"></a>
+      </React.Fragment>
     );
   }
 }

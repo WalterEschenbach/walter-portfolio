@@ -1,5 +1,6 @@
 import React from "react";
 import ToolList from "./ToolList";
+import { FaArrowLeft } from "react-icons/fa";
 
 class Toolkit extends React.Component {
   state = { slide: false };
@@ -12,13 +13,14 @@ class Toolkit extends React.Component {
   render() {
     return (
       <div
-        className={`border end toolkit ${
-          this.state.slide === true ? "slide" : ""
+        className={`border toolkit ${
+          this.state.slide === true ? "slide" : "left-center"
         }`}
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
       >
-        <ToolList />
+        {this.state.slide === true && <ToolList />}
+        {this.state.slide === false && <FaArrowLeft />}
       </div>
     );
   }

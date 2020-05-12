@@ -8,16 +8,16 @@ export default function Nav() {
   let width = window.innerWidth;
 
   return (
-    <div>
-      {width > 1024 && (
+    <React.Fragment>
+      {width >= 1024 && (
         <Router>
-          <nav className="right">
+          <nav className="row end ">
             <ul className="space-between row">
               {links.map((link) => (
-                <li key={link} className="listStyle">
+                <li key={link} className="listStyle animated bounce">
                   <NavLink
                     to={`/${link}`}
-                    activeStyle={{ color: "red", fontWeight: "bold" }}
+                    activeStyle={{ color: "#333333", fontWeight: "bold" }}
                   >
                     <h3>{link}</h3>
                   </NavLink>
@@ -27,8 +27,7 @@ export default function Nav() {
           </nav>
         </Router>
       )}
-    </div>
+      {/* <Burger /> */}
+    </React.Fragment>
   );
-
-  return <Burger />;
 }

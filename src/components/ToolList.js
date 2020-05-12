@@ -18,6 +18,7 @@ export default function ToolList() {
     >
       {tools.map((tool) => (
         <img
+          key={tool}
           className="thumbnail margin-small"
           src={`../svg/${tool}`}
           rel={tool}

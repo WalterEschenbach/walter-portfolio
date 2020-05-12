@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="280" height="250" preserveAspectRatio="xMidYMid">
+<style type="text/css">
+  text {
+    text-anchor: middle; font-size: 80px; opacity: 0;
+  }
+</style>
+<g style="transform-origin:140px 125px;transform:scale(1)">
+<g transform="translate(140,125)">
+  <g transform="translate(0,0)"><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 14.925); opacity: 0.05; transform-origin: -19.56px -6.5472px; animation: 1s linear 0s 1 normal forwards running float-btt-in-74be355b-5fa0-4e1f-a31b-7672a343fa76;"><path d="M14.88 0L2.24-54.56L9.04-54.56L19.60-6.40L19.68-6.40L33.68-54.56L42.16-54.56L56-6.40L56.08-6.40L66.56-54.56L73.36-54.56L60.80 0L52.32 0L37.92-48.08L37.84-48.08L23.36 0L14.88 0" fill="#0a0a0a" stroke="none" stroke-width="none" transform="translate(-57.35996055603027,20.73280342102051)" style="fill: rgb(10, 10, 10);"></path></g><g class="path" style="transform: matrix(1, 0, 0, 1, 0, 14.925); opacity: 0.05; transform-origin: 42.48px -6.5472px; animation: 1s linear 0.33s 1 normal forwards running float-btt-in-74be355b-5fa0-4e1f-a31b-7672a343fa76;"><path d="M82.72 0L82.72-54.56L116.16-54.56L116.16-48.40L89.44-48.40L89.44-30.96L114.24-30.96L114.24-24.96L89.44-24.96L89.44-6.16L116.96-6.16L116.96 0L82.72 0" fill="#0a0a0a" stroke="none" stroke-width="none" transform="translate(-57.35996055603027,20.73280342102051)" style="fill: rgb(40, 41, 47);"></path></g></g>
+</g>
+</g>
+<style id="float-btt-in-74be355b-5fa0-4e1f-a31b-7672a343fa76" data-anikit="">@keyframes float-btt-in-74be355b-5fa0-4e1f-a31b-7672a343fa76
+{
+  0% {
+    animation-timing-function: cubic-bezier(0.2242,0.7499,0.3142,0.8148);
+    transform: translate(0px,14.925px) rotate(0deg) scale(1,1) skewX(0deg) skewY(0deg);
+    opacity: 0.05;
+  }
+  100% {
+    transform: translate(0px,0px) rotate(0deg) scale(1,1) skewX(0deg) skewY(0deg);
+    opacity: 1;
+  }
+}</style></svg>

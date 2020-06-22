@@ -2,7 +2,6 @@ import React from "react";
 import Toolkit from "./Toolkit";
 import Nav from "./Nav";
 import Logo from "./Logo";
-import Canvas from "./Canvas";
 
 export default function Header() {
   let width = window.innerWidth;
@@ -13,15 +12,13 @@ export default function Header() {
         {width >= 1024 && (
           <React.Fragment>
             <div className="fifty">
-              <Canvas>
-                <h1 className={`hInfo my-name animated fadeInDown`}>
-                  Walter Eschenbach
-                </h1>
-                <h3 className={`hInfo animated fadeInDown`}>
-                  Front-End Web Developer
-                </h3>
-                <h3 className={`hInfo animated fadeInDown`}>Resume</h3>
-              </Canvas>
+              <h1 className={`hInfo my-name animated fadeInDown`}>
+                Walter Eschenbach
+              </h1>
+              <h3 className={`hInfo animated fadeInDown`}>
+                Front-End Web Developer
+              </h3>
+              <h3 className={`hInfo animated fadeInDown`}>Resume</h3>
             </div>
             <div className="column fifty">
               {width >= 1024 && <Nav />}

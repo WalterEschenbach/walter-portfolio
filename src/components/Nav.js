@@ -1,10 +1,9 @@
 import React from "react";
-import Logo from "./Logo";
-import Burger from "./Burger";
+import Resume from "./Resume.pdf";
+
 import { BrowserRouter as Router, NavLink } from "react-router-dom";
 
 export default function Nav() {
-  const links = ["Home", "Portfolio", "Resume", "Contact"];
   let width = window.innerWidth;
 
   return (
@@ -13,16 +12,30 @@ export default function Nav() {
         <Router>
           <nav className="row end ">
             <ul className="space-between row">
-              {links.map((link) => (
-                <li key={link} className="listStyle animated bounce">
-                  <NavLink
-                    to={`/${link}`}
-                    activeStyle={{ color: "#333333", fontWeight: "bold" }}
-                  >
-                    <h3>{link}</h3>
-                  </NavLink>
-                </li>
-              ))}
+              <li key="Home" className="listStyle animated bounce">
+                <NavLink
+                  to="/"
+                  activeStyle={{ color: "#333333", fontWeight: "bold" }}
+                >
+                  <h3>Home</h3>
+                </NavLink>
+              </li>
+              <li key="Resume" className="listStyle animated bounce">
+                <a
+                  href={Resume}
+                  activestyle={{ color: "#333333", fontWeight: "bold" }}
+                >
+                  <h3>Resume</h3>
+                </a>
+              </li>
+              <li key="Contact" className="listStyle animated bounce">
+                <NavLink
+                  to="/Contact"
+                  activeStyle={{ color: "#333333", fontWeight: "bold" }}
+                >
+                  <h3>Contact</h3>
+                </NavLink>
+              </li>
             </ul>
           </nav>
         </Router>

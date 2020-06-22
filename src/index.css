@@ -1,9 +1,7 @@
 body {
   margin: 0;
   overflow-x: hidden;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -17,10 +15,16 @@ body {
 html {
   font-size: 24px;
   font-family: "Barlow Semi Condensed", sans-serif;
+  height: 100vh;
+}
+.app {
+  margin: 0;
+  padding: 0;
 }
 .border {
   border: solid 1px black;
 }
+
 .b-border {
   border: solid 2px blue;
 }
@@ -190,6 +194,7 @@ nav ul li a.active {
 .hb {
   background-image: url("./img/Ellipse\ 2.svg");
   background-repeat: no-repeat;
+  margin-top: 0px;
 }
 .hInfo {
   width: 90%;

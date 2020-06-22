@@ -8,6 +8,8 @@ const tools = [
   "css3.svg",
   "react-icon.svg",
   "jquery-vertical.svg",
+  "firebase.svg",
+  "stripe-icon.svg",
 ];
 
 export default function ToolList() {
@@ -18,6 +20,7 @@ export default function ToolList() {
     >
       {tools.map((tool) => (
         <img
+          alt={tool}
           key={tool}
           className="thumbnail margin-small"
           src={`../svg/${tool}`}

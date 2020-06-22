@@ -29,7 +29,7 @@ export default class ProjectList extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <ul className="proj-list">
+        <ul className="proj-list border">
           {projects.map((project) => (
             <li className="proj center m-top animated fadeInUp" key={project}>
               <a
@@ -43,7 +43,6 @@ export default class ProjectList extends React.Component {
             </li>
           ))}
         </ul>
-        <a href="./files/Walter Eschenbach Resume - 05.09.20.pdf"></a>
       </React.Fragment>
     );
   }
